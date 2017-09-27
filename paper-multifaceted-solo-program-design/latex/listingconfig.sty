@@ -1,0 +1,81 @@
+\lstdefinelanguage{Racket}{
+sensitive=false,
+morekeywords={define,cond,EXAMPLE,check-expect,else},
+% affects what gets line-wrapped in lstinline
+alsoletter={(,),\,,.,=},
+keywordstyle=\bfseries,
+% i: delimiter is invisible
+% s: from begin to end of delim (l would be entire line)
+% if **, should superimpose keyword formatting, but doesn't.
+% works properly with ** and itshape
+moredelim=*[is][\color{blue}\uline]{||}{||},
+captionpos=b,
+frame=L,
+xleftmargin=\parindent,
+% needed to make underlining not underline the spaces before text
+keepspaces=true,
+float=false,
+identifierstyle=,
+keywordstyle=\color{blue},
+mathescape=true,
+% Footnotesize doesn't seem to be different in this style.
+% Scriptsize would work, but too small
+%basicstyle=\footnotesize\ttfamily,
+%basicstyle=\scriptsize\ttfamily,
+basicstyle=\fontsize{8}{0.9em}\ttfamily,
+showstringspaces=false,
+firstnumber=1,
+%numberstyle=\tiny,
+stepnumber=1,
+breaklines=true,
+%numbers=left,
+numbersep=5pt,
+xleftmargin=8pt,
+escapeinside={\;*}{\n}
+% escapechar=%
+%upquote=true,
+%columns=fullflexible,
+%flexiblecolumns=true,
+}
+
+%% Identical to Racket other than keywords
+
+\lstdefinelanguage{Pyret}{
+sensitive=false,
+morekeywords={},
+% affects what gets line-wrapped in lstinline
+alsoletter={(,),\,,.,=},
+keywordstyle=\bfseries,
+% i: delimiter is invisible
+% s: from begin to end of delim (l would be entire line)
+% if **, should superimpose keyword formatting, but doesn't.
+% works properly with ** and itshape
+moredelim=*[is][\color{blue}\uline]{||}{||},
+captionpos=b,
+frame=L,
+xleftmargin=\parindent,
+% needed to make underlining not underline the spaces before text
+keepspaces=true,
+float=false,
+identifierstyle=,
+keywordstyle=\color{blue},
+mathescape=true,
+% Footnotesize doesn't seem to be different in this style.
+% Scriptsize would work, but too small
+%basicstyle=\footnotesize\ttfamily,
+%basicstyle=\scriptsize\ttfamily,
+basicstyle=\fontsize{8}{0.9em}\ttfamily,
+showstringspaces=false,
+firstnumber=1,
+%numberstyle=\tiny,
+stepnumber=1,
+breaklines=true,
+%numbers=left,
+numbersep=5pt,
+xleftmargin=8pt,
+escapeinside={\;*}{\n}
+% escapechar=%
+%upquote=true,
+%columns=fullflexible,
+%flexiblecolumns=true,
+}
